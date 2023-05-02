@@ -1,4 +1,4 @@
-
+echo -e"\e[36m >>> copying  erlang repos\e[0m"
 curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | bash
 yum install erlang -y
 yum install rabbitmq-server -y
