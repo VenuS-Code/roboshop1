@@ -14,3 +14,4 @@ systemctl start user
 cp /home/centos/roboshop1/mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host mongodb.devopsbeginner.online </app/schema/user.js
+systemctl restart user
