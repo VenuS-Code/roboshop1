@@ -10,7 +10,7 @@ cd /app
 go mod init dispatch
 go get
 go build
-cp /home/centos/roboshop1/dispatch.service /etc/systemd/system/dispatch.service
+cp ${script_path}/dispatch.service /etc/systemd/system/dispatch.service
 systemctl daemon-reload
 systemctl enable dispatch
 systemctl start dispatch

@@ -9,11 +9,11 @@ cd /app
 unzip /tmp/user.zip
 cd /app
 npm install
-cp /home/centos/roboshop1/user.service /etc/systemd/system/user.service
+cp ${script_path}/user.service /etc/systemd/system/user.service
 systemctl daemon-reload
 systemctl enable user
 systemctl start user
-cp /home/centos/roboshop1/mongo.repo /etc/yum.repos.d/mongo.repo
+cp ${script_path}/mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host mongodb.devopsbeginner.online </app/schema/user.js
 systemctl restart user

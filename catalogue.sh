@@ -13,11 +13,11 @@ cd /app
 unzip /tmp/catalogue.zip
 cd /app
 npm install
-cp /home/centos/roboshop1/catalogue.service /etc/systemd/system/catalogue.service
+cp ${script_path}/catalogue.service /etc/systemd/system/catalogue.service
 systemctl daemon-reload
 systemctl enable catalogue
 systemctl start catalogue
-cp /home/centos/roboshop1/mongo.repo /etc/yum.repos.d/mongo.repo
+cp ${script_path}/mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host mongodb.devopsbeginner.online </app/schema/catalogue.js
 systemctl restart catalogue
