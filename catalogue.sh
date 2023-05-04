@@ -1,5 +1,6 @@
-script_path=$(dirname $0)
-
+script_path=$(realpath $0)
+realpath $0
+exit
 source ${script_path}/common.sh
 
 echo $app_user
