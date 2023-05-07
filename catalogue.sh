@@ -1,5 +1,4 @@
 
-exit
 source ${script_path}/common.sh
 
 echo $app_user
