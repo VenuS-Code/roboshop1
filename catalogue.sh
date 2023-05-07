@@ -20,3 +20,4 @@ cp ${script_path}/mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host mongodb.devopsbeginner.online </app/schema/catalogue.js
 systemctl restart catalogue
+
